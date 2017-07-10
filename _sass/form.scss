@@ -1,0 +1,388 @@
+.form-container h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.form-container p {
+  margin: 5px 0 25px 0;
+  font-size: 14px;
+}
+.form-container form {
+  width: 520px;
+  margin: 4em auto;
+  padding: 30px 20px 20px;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+.form-container .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.form-container .text input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  background: #fafafa;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+.form-container .text input:focus { outline: none; }
+
+.form-container .text label {
+  color: #999; 
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+.form-container .text input:focus ~ label, .form-container .text input.used ~ label {
+  top: -20px;
+  transform: scale(.75); left: -2px;
+  /* font-size: 14px; */
+  color: #4a89dc;
+}
+
+.form-container .text .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.form-container .bar:before, .form-container .bar:after {
+  content: '';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #4a89dc; 
+  transition: all 0.2s ease;
+}
+
+.form-container .text .bar:before { left: 50%; }
+
+.form-container .text .bar:after { right: 50%; }
+
+.form-container .text input:focus ~ .bar:before, .form-container .text input:focus ~ .bar:after { width: 50%; }
+
+.form-container .text .highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.form-container .text input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from { background: #4a89dc; }
+  to  { width: 0; background: transparent; }
+}
+
+.form-container .button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 48%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #3160B6;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.form-container .button:focus { outline: 0; }
+
+.form-container .buttonBlue {
+  background: #4a89dc;
+  text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+}
+.form-container .cancel {
+  background: #fafafa;
+  text-shadow: 0 0 0 rgb(250, 250, 250);
+  color: #4a89dc;
+  border: medium none;
+  -webkit-font-smoothing: auto;
+}
+.form-container .actions-form a {
+  text-decoration: none;
+}
+.form-container .buttonBlue:hover { background: #357bd8; }
+
+.form-container .ripples {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.form-container .ripplesCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.form-container .ripples.is-active .ripplesCircle {
+  animation: ripples .4s ease-in;
+}
+.form-container .actions-form {
+  width: 75%;
+  text-align: right;
+  margin: 0 0 0 25%;
+}
+
+@keyframes ripples {
+  0% { opacity: 0; }
+
+  25% { opacity: 1; }
+
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes
+  cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
+   -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+   0% {
+   opacity: 0;
+   -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  }
+   20% {
+   -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  }
+   40% {
+   -webkit-transform: scale3d(0.9, 0.9, 0.9);
+  }
+   60% {
+   opacity: 1;
+   -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  }
+   80% {
+   -webkit-transform: scale3d(0.97, 0.97, 0.97);
+  }
+   100% {
+   opacity: 1;
+   -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+@-webkit-keyframes 
+cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
+ -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+ 0% {
+ opacity: 0;
+ -webkit-transform: scale3d(0.3, 0.3, 0.3);
+}
+ 20% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1);
+}
+ 40% {
+ -webkit-transform: scale3d(0.9, 0.9, 0.9);
+}
+ 60% {
+ opacity: 1;
+ -webkit-transform: scale3d(1.03, 1.03, 1.03);
+}
+ 80% {
+ -webkit-transform: scale3d(0.97, 0.97, 0.97);
+}
+ 100% {
+ opacity: 1;
+ -webkit-transform: scale3d(1, 1, 1);
+}
+}
+@keyframes 
+cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
+ -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+ 0% {
+ opacity: 0;
+ -webkit-transform: scale3d(0.3, 0.3, 0.3);
+ transform: scale3d(0.3, 0.3, 0.3);
+}
+ 20% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1);
+ transform: scale3d(1.1, 1.1, 1.1);
+}
+ 40% {
+ -webkit-transform: scale3d(0.9, 0.9, 0.9);
+ transform: scale3d(0.9, 0.9, 0.9);
+}
+ 60% {
+ opacity: 1;
+ -webkit-transform: scale3d(1.03, 1.03, 1.03);
+ transform: scale3d(1.03, 1.03, 1.03);
+}
+ 80% {
+ -webkit-transform: scale3d(0.97, 0.97, 0.97);
+ transform: scale3d(0.97, 0.97, 0.97);
+}
+ 100% {
+ opacity: 1;
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+}
+
+.radio {
+  display: block;
+  font-size: 16px;
+  line-height: 100%;
+  cursor: pointer;
+  clear: both;
+  width: 100%;
+  margin: 0 0 10px 0;
+  float: left;
+}
+
+.radio:hover .inner {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: .5;
+}
+
+.radio input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.radio input:checked + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio input:checked + .outer { border: 3px solid #f08b3b; }
+
+.radio input:focus + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #e67012;
+}
+
+.radio .outer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  border: 3px solid #0c70b4;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.radio .inner {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #f08b3b;
+  opacity: 0;
+}
+@media only screen and (max-width: 640px) {
+  .form-container h4 {
+    margin: 0 0 25px 0;
+  }
+  .form-container form {
+    width: 90%;
+  }
+  .form-container form p {
+    display: none;
+  }
+  .form-container .group {
+    margin: 0 0 35px 0;
+  }
+  .form-container .text input,
+  .form-container .text label {
+    font-size: 14px;
+  }
+  .radio {
+    font-size: 14px;
+  }
+  .radio .outer {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #0c70b4;
+  }
+  .radio input:checked + .outer {
+    border: 1px solid #f08b3b;
+  }
+  .form-container .actions-form {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+}
+#message_container.has-error{
+  color: #e03030;
+  font-size: 14px;
+  background: rgba(224, 48, 48, 0.12);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+#message_container.success{
+  color: #329c0a;
+  font-size: 14px;
+  background: rgba(50, 156, 10, 0.15);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.form-container .group.text.has-error label{
+  color: #e03030;
+}
+.form-container .group.text.has-error input{
+  border-bottom: 1px solid #e03030;
+}
+.form-container .group.has-error .bar:before, .form-container .has-error .bar:after {
+  background: #e03030;
+}

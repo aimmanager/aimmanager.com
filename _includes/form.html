@@ -1,0 +1,74 @@
+    <div class="page-overlay-wrapper" style="opacity: 0; display: none;">
+      <div class="overlay-sections">
+          <section class="contact-section overlay-section" style="display: none;">
+            <div class="fade-in" style="opacity: 0; transform: translateY(0px);">
+                <div class="form-container">
+                    
+                    <form id="contact_form" class="new_contact_form" action="/pages/contact" accept-charset="UTF-8" data-remote="true" method="post">
+                    <div id="message_container"></div>
+                    <h4>Envíanos un correo</h4>
+                    <p>Contáctate con nosotros si quieres reunirte para contarnos tu proyecto, cotizar con nosotros, crear una alianza comercial, etc.</p>
+                    <div class="group text">
+                      <input type="text" name="contact_form[name]" id="contact_form_name" />
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>Nombre</label>
+                    </div>
+                    <div class="group text">
+                      <input type="text" name="contact_form[company]" id="contact_form_company" />
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>Empresa</label>
+                    </div>
+                    <div class="group text">
+                      <input type="text" name="contact_form[email]" id="contact_form_email" />
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>Email</label>
+                    </div>
+                    <div class="group text">
+                      <input type="text" name="contact_form[phone]" id="contact_form_phone" />
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>Teléfono</label>
+                    </div>
+                    <div class="group text">
+                      <input type="text" name="contact_form[comment]" id="contact_form_comment" />
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>Mensaje</label>
+                    </div>
+      
+                    <div class="row">
+                      <div class="group rad-btn">
+                        <label class="radio">
+                          <input id="radio1" type="radio" value="reunion" checked="checked" name="contact_form[subject]" />
+                          <span class="outer"><span class="inner"></span></span>Solicitar una reunión informativa
+                        </label>
+          
+                        <label class="radio">
+                          <input id="radio2" type="radio" value="alianza" name="contact_form[subject]" />
+                          <span class="outer"><span class="inner"></span></span>Armar alianza comercial
+                        </label>
+                        <label class="radio">
+                          <input id="radio3" type="radio" value="cotizar" name="contact_form[subject]" />
+                          <span class="outer"><span class="inner"></span></span>Solicitar una cotización
+                        </label>
+          
+                        <label class="radio">
+                          <input id="radio4" type="radio" value="otro" name="contact_form[subject]" />
+                          <span class="outer"><span class="inner"></span></span>Otro
+                        </label>
+                      </div>
+                    </div>
+                    <br/>
+                    <div class="actions-form">
+                      <a class="fader-link close-overlay" href="http://www.aimmanager.com/" data-ga-label="Home" data-overlay-target="">
+                        <button type="button" class="button cancel">Cancelar</button>
+                      </a>
+                      <button id="submit_form" type="button" class="button buttonBlue" onClick="validateForm();">Enviar
+                        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                      </button>
+                    </div>
+                  </form>
+                    
+                </div>
+            </div>
+          </section>
+      </div>
+    </div>

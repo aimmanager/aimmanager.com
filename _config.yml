@@ -1,12 +1,7 @@
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "http://www.aimmanager.com"
 markdown: kramdown
 sass:
     sass_dir: _sass
     style: compressed
-
-
-assets:
-  assets:
-    - "*"

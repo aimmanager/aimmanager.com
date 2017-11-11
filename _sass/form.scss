@@ -16,9 +16,9 @@
 }
 .form-container .group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
-.form-container .text input {
+.form-container .text input, .form-container .text textarea {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   -webkit-appearance: none;
@@ -30,24 +30,14 @@
   border-radius: 0;
   border-bottom: 1px solid #757575;
 }
+
 .form-container .text input:focus { outline: none; }
 
 .form-container .text label {
   color: #999;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
-  position: absolute;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: all 0.2s ease;
-}
-
-.form-container .text input:focus ~ label, .form-container .text input.used ~ label {
-  top: -20px;
-  transform: scale(.75); left: -2px;
-  /* font-size: 14px; */
-  color: #4a89dc;
 }
 
 .form-container .text .bar {

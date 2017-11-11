@@ -39,7 +39,7 @@ function startLoad() {
 
 function validateForm() {
   var isValid = true;
-  var requiredInputs = ["name", "company", "email"];
+  var requiredInputs = ["name", "email"];
 
   for (var i = requiredInputs.length - 1; i >= 0; i--) {
     var inputID = '#contact_form_' + requiredInputs[i];

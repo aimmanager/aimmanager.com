@@ -16,7 +16,7 @@
 }
 .form-container .group {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 .form-container .text input {
   font-size: 18px;
@@ -33,7 +33,7 @@
 .form-container .text input:focus { outline: none; }
 
 .form-container .text label {
-  color: #999; 
+  color: #999;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -58,11 +58,11 @@
 
 .form-container .bar:before, .form-container .bar:after {
   content: '';
-  height: 2px; 
+  height: 2px;
   width: 0;
-  bottom: 1px; 
+  bottom: 1px;
   position: absolute;
-  background: #4a89dc; 
+  background: #4a89dc;
   transition: all 0.2s ease;
 }
 
@@ -74,9 +74,9 @@
 
 .form-container .text .highlight {
   position: absolute;
-  height: 60%; 
-  width: 100px; 
-  top: 25%; 
+  height: 60%;
+  width: 100px;
+  top: 25%;
   left: 0;
   pointer-events: none;
   opacity: 0.5;
@@ -202,7 +202,7 @@
 
 
 
-@-webkit-keyframes 
+@-webkit-keyframes
 cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -229,7 +229,7 @@ cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
  -webkit-transform: scale3d(1, 1, 1);
 }
 }
-@keyframes 
+@keyframes
 cardEnter {  0%, 20%, 40%, 60%, 80%, 100% {
  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);

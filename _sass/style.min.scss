@@ -1163,11 +1163,13 @@ h6 {
 .modules-group .modules-cont h3 {
   text-align: center;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 120%;
   margin: 5px 0 0 0;
-  opacity: 0.5;
   transition: all 0.25s;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .modules-group .modules-cont a:hover h3 {
@@ -1954,13 +1956,13 @@ h6 {
  40% {-webkit-transform: translateY(-10px);}
  60% {-webkit-transform: translateY(-5px);}
 }
- 
+
 @-moz-keyframes bounce {
  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
  40% {-moz-transform: translateY(-10px);}
  60% {-moz-transform: translateY(-5px);}
 }
- 
+
 @-o-keyframes bounce {
  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
  40% {-o-transform: translateY(-10px);}
@@ -2981,4 +2983,4 @@ section.aim-overlay-section.active {
   .footer-nav-links.float-right .links-content.flags-gral {
     display: none;
   }
-}  
+}

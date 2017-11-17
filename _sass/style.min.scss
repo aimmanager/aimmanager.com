@@ -1388,6 +1388,7 @@ h6 {
   margin-left: 5px;
   background: none;
   transition: all 0.25s;
+  cursor: pointer;
 }
 
 .header .header-nav-link:hover,
@@ -1822,6 +1823,7 @@ h6 {
 .contact-page .header-nav-link.contact-link {
   background: #4fd0ea;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .contact-section .mobile-nav-link.contact-link,

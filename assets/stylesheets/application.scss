@@ -1,4 +1,5 @@
-
+---
+---
 
 /* ==========================================================================
    Author's custom styles
@@ -50,7 +51,7 @@
 
       .jumbotron .bg-image_1 {
         display: block;
-        background-image: url('https://static.bitblox.me/storage/media/33393/preview/1920x*xR/99a326ca89db15a33fa240f133025968bdae198c.jpeg');
+        background-image: url('../images/bg3.jpg');
             background-size: cover;
       }
 
@@ -61,7 +62,7 @@
 
          .jumbotron .bg-image_2 {
            display: block;
-           background-image: url('https://static.bitblox.me/storage/media/33393/preview/1920x*xR/c949fff1e9b507d1ef96a484ecd9ee4115755b75.png');
+           background-image: url('../images/bg2.png');
                background-size: cover;
          }
 

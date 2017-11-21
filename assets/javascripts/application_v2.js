@@ -4,9 +4,17 @@
 			$(this).validate();
 		});
 
-		$(".clients_logo_owl").owlCarousel({items:4, autoplay:true, loop:true,});
+		$(".clients_logo_owl").owlCarousel({items:4, autoplay:true, loop:true,
+			responsive:{
+				0: {
+					items:1
+				},
+				992: {
+					items:4
+				}
+		}});
 
-		$(".jumbotron_phone_image_owl").owlCarousel({ autoplay: true, loop:true, items : 1});
+		$(".jumbotron_phone_image_owl").owlCarousel({autoplay: true, loop:true, items : 1});
 
 		window.addEventListener('scroll', function(e) {
 			var distanceY = window.pageYOffset || document.documentElement.scrollTop, shrinkOn = 500;

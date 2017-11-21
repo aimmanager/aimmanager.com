@@ -4,16 +4,16 @@
 			$(this).validate();
 		});
 
-		$(".owl-carousel").owlCarousel({items:1, loop:true, autoplay:true});
+		$(".clients_logo_owl").owlCarousel({items:4, autoplay:true, loop:true,});
 
-		$(".logo_clients").owlCarousel({items:1, loop:true, autoplay:true});
+		$(".jumbotron_phone_image_owl").owlCarousel({ autoplay: true, loop:true, items : 1});
 
 		window.addEventListener('scroll', function(e) {
 			var distanceY = window.pageYOffset || document.documentElement.scrollTop, shrinkOn = 500;
 			if (distanceY > shrinkOn) {
 				$('#nav_bar_top').fadeIn(10);
 			} else {
-				$('#nav_bar_top').fadeOut();
+				$('#nav_bar_top').fadeOut(10);
 			}
 		});
 

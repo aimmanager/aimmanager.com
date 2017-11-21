@@ -5,13 +5,13 @@ $().ready(function () {
     });
 
     $(".clients_logo_owl").owlCarousel({
-        items: 4, autoplay: true, loop: true,
+        items: 6, autoplay: true, loop: true,
         responsive: {
             0: {
                 items: 1
             },
             992: {
-                items: 4
+                items: 6
             }
         }
     });
